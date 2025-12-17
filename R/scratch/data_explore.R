@@ -1,6 +1,5 @@
 #' let's look at this nonsense
 
-`%notin%` <- Negate(`%in%`)
 
 surv_df <- readRDS(
     here::here("./data/cholera/raw/Public_surveillance_dataset.rds")
