@@ -13,6 +13,11 @@ RUN echo "options(repos = c(CRAN = Sys.getenv('CRAN_MIRROR')))" \
 COPY sys_deps/sys_deps.sh /tmp/sys_deps.sh
 RUN bash /tmp/sys_deps.sh && rm /tmp/sys_deps.sh
 
+# i want git so i can do dev in my container
+RUN apt-get update && apt-get install -y \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
 RUN install2.r --error --skipinstalled pak
 
 # copy project over but only the ones I need

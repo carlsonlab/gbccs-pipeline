@@ -1,5 +1,5 @@
 #' let's look at this nonsense
-
+source(here::here("./packages.R"))
 
 surv_df <- readRDS(
     here::here("./data/cholera/raw/Public_surveillance_dataset.rds")
