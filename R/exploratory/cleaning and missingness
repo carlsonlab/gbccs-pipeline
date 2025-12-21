@@ -1,0 +1,71 @@
+# clear workspace
+rm(list=ls())
+graphics.off()
+
+# set wd (I am still figuring out how to use here::here)
+setwd('~/OneDrive/Yale/Carlson Lab/Cholera')
+
+# load packages
+library(tidyr)
+library(visdat)
+library(ggplot2)
+# is package forcing preferable to this?
+
+# read in data sets
+surv_df = readRDS("Public_surveillance_dataset.rds") # surveillance data
+outbreak_df = readRDS("Public_outbreak_dataset.rds") # outbreak data
+surv_masked = readRDS("Location_masked_surveillance_dataset.rds") # location masked surveillance data
+outbreak_masked = readRDS("Location_masked_outbreak_dataset.rds") # location masked outbreak data
+
+#### CLEANING AND MISSINGNESS ####
+
+# breaking out column names, surv_df
+surv_df = separate_wider_delim(surv_df,
+                                 location_name,
+                                 "::",
+                                 names = c("region","adm0", "adm1", "adm2","adm3"),
+                                 too_few = c("align_start"))
+                                 # adds four columns
+
+# breaking out column names, surv_df
+outbreak_df = separate_wider_delim(outbreak_df,
+                                 location_name,
+                                 "::",
+                                 names = c("region","adm0", "adm1", "adm2","adm3"),
+                                 too_few = c("align_start"))
+                                 # adds four columns
+
+# unique locations at each spatial scale, surv_df
+surv_regions = unique(surv_df$region)
+surv_adm0 = unique(surv_df$adm0)
+surv_adm1 = unique(surv_df$adm1)
+surv_adm2 = unique(surv_df$adm2)
+surv_adm3 = unique(surv_df$adm3)
+
+# unique locations at each spatial scale, outbreak_df
+outbreak_regions = unique(outbreak_df$region)
+outbreak_adm0 = unique(outbreak_df$adm0)
+outbreak_adm1 = unique(outbreak_df$adm1)
+outbreak_adm2 = unique(outbreak_df$adm2)
+outbreak_adm3 = unique(outbreak_df$adm3)
+
+# range of dates included 
+range(surv_df$epiweek)
+# 2009 to 2023 for surv_df
+range(outbreak_df$TL)
+# 2010 to 2023 for outbreak_df
+
+# quick look at outbreak data
+visdat::vis_dat(outbreak_df,
+                sort_type = TRUE)
+# basically no data for confirmed cases, missing a lot of deaths 
+# also missing a lot of adm2, usually don't have adm3
+
+# surv_df is large, taking random sample
+sample_surv_df = surv_df[sample(nrow(surv_df), 10000), ]
+
+# quick look at surveillance data sample
+visdat::vis_dat(sample_surv_df,
+                sort_type = TRUE)
+# similarly missing most confirmed cases and a lot of deaths, some adm2 and almost no adm3
+# also missing a fair amount of observation collection IDs and original location names, less important
