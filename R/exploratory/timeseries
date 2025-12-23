@@ -1,0 +1,11 @@
+#### TIMESERIES (AFTER CLEANING AND MISSINGNESS STEP) #### 
+
+# plot suspected cases by outbreak start date
+ggplot(outbreak_df, aes(x = TL, y = sCh)) +
+  geom_line() +
+  scale_x_date(date_label = "%Y", date_breaks = "1 year") +
+  scale_y_continuous(breaks = c(0, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000)) +
+  labs(x = "Outbreak Start Date", y = "Suspected Cases", 
+       title = "Suspected Cases by Outbreak Start Date, Surveillance Data") + 
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())
+# originally I plotted separately by region but there are only 58 entries for EMR
