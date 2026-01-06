@@ -12,4 +12,4 @@ If everything you need is installed correctly, then when you open this folder in
 
 You will want to reopen the folder in the container. If such a pop-up does NOT come up, you can use the command palette (`Cmd`+`Shift`+`P`) and then type `Dev Containers: Reopen in Container`. This will start your docker engine automatically and connect you to the container. You can check that the terminal is then *actually* pointing to the container by running something like `cat /etc/os-release` which will tell you what OS the terminal is looking at (i.e. which OS the container is running. It should (as of this writing) be running Ubuntu 22.04.5). 
 
-Once you're up and running in the container, you can write code and develop the same as normal!
+Once you're up and running in the container, you can write code and develop the same as normal! I've ensured the image has bash installed so you can commit as well from *inside* the container.
