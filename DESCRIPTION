@@ -20,6 +20,7 @@ LazyData: true
 Depends: R (>= 4.4)
 Imports:
     dplyr,
+    sf,
     readr,
     tidyr, 
     conflicted,

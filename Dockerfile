@@ -16,9 +16,20 @@ RUN bash /tmp/sys_deps.sh && rm /tmp/sys_deps.sh
 # i want git so i can do dev in my container
 RUN apt-get update && apt-get install -y \
     git \
+    # install the sf dependencies from here down
+    libabsl-dev \
+    cmake \
+    libgdal-dev \
+    gdal-bin \
+    libgeos-dev \
+    libproj-dev \
+    libsqlite3-dev \
+    libudunits2-dev \
     && rm -rf /var/lib/apt/lists/*
 
 RUN install2.r --error --skipinstalled pak
+
+
 
 # copy project over but only the ones I need
 WORKDIR /home/rproject

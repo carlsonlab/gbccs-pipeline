@@ -2,6 +2,8 @@
 #' A scratch file to try and fix the location naming problem so that we don't
 #' have to deal with it later. just scripting this out, no need for anything
 #' fancy I think
+#' AUTHOR: Cole
+#' DATE: 09 January 2025
 
 # Public Surveillance Dataset --------------------------------------------------
 df_surv <- readRDS(
