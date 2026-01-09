@@ -41,7 +41,10 @@ sf::st_crs(surv_shp$geometry[[1]])
 surv_full <- dplyr::left_join(
     surv_shp,
     surv_df |>
-        dplyr::select(location_period_id, region, adm0, adm1, adm2, adm3) |>
+        dplyr::select(
+            location_period_id, spatial_scale,
+            region, adm0, adm1, adm2, adm3
+        ) |>
         dplyr::mutate(location_period_id = as.character(location_period_id)),
     by = "location_period_id"
 )
@@ -49,11 +52,26 @@ surv_full <- dplyr::left_join(
 class(surv_full)
 # there's no CRS defined so I'm going to set it go WGS84 Sinusoidal -- the no
 # CRS is actually because it's not a proper sfc object yet, but we're fixing
-# taht, so we can re-project wit
-surv_full$geometry <- sf::st_as_sfc(surv_full$geometry, crs = 3832)
+# that, so we can re-project it in an actual form
+# surv_full$geometry <- sf::st_as_sfc(surv_full$geometry, crs = 3832)
 
-#
+# this takes forever and needs a lot of RAM
 surv_full <- sf::st_transform(surv_full, crs = 3832)
 
+surv_full <- dplyr::left_join(
+    surv_full,
+    surv_df |>
+        dplyr::select(location_period_id, spatial_scale) |>
+        dplyr::mutate(location_period_id = as.character(location_period_id)),
+    by = "location_period_id"
+)
+
+# save the output -- this is like 4.6GB????
+qs::qsave(surv_full, here::here("./data/cholera/clean/surv_geospatial.qs"))
+
 ggplot() +
-    geom_sf(data = surv_shp$geometry[[1]], fill = "lightgrey")
+    geom_sf(data = surv_full$geometry[[1]], fill = "lightgrey")
+
+# let's look at just the country ones
+surv_country <- surv_full |>
+    dplyr::filter(spatial_scale == "")
