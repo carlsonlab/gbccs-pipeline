@@ -1,0 +1,21 @@
+#### TIME SERIES ####
+
+# plot suspected cases in outbreak data over time
+ggplot(outbreak_df, aes(x = TL, y = sCh)) +
+  geom_line() +
+  scale_x_date(date_label = "%Y", date_breaks = "1 year") +
+  scale_y_continuous(breaks = c(0, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000)) +
+  labs(x = "Outbreak start date", y = "Suspected cases", 
+       title = "Suspected Cases on Start Date of Observation, Outbreak Data") + 
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())
+# originally I plotted separately by region but there are only 58 entries for EMR
+
+# repeat with surveillance data
+ggplot(surv_df, aes(x = TL, y = sCh)) +
+  geom_line() +
+  scale_x_date(date_label = "%Y", date_breaks = "1 year") +
+  scale_y_continuous(breaks = c(0, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000)) +
+  labs(x = "Outbreak start date", y = "Suspected cases", 
+       title = "Suspected Cases on Start Date of Observation, Surveillance Data") + 
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())
+# # looks pretty similar to outbreak time series, with one new peak end of 2012
