@@ -1,0 +1,29 @@
+#### MISSINGNESS ####
+
+# quick look at outbreak 
+visdat::vis_dat(outbreak_df,
+                sort_type = TRUE) + 
+  labs(title = "Outbreak Data")
+# basically no data for confirmed cases, missing a lot of confirmed deaths 
+# also missing a lot of adm2, basically don't have adm3
+
+# surv_df is large, take random sample
+sample_surv_df = surv_df[sample(nrow(surv_df), 10000), ]
+
+# quick look at surveillance 
+visdat::vis_dat(sample_surv_df,
+                sort_type = TRUE) + 
+  labs(title = "Surveillance Data")
+# similarly missing most confirmed cases and a lot of confirmed deaths, some adm2 and almost no adm3
+# also missing a lot of observation collection IDs and original location names, maybe less important
+
+# look at coverage by country for outbreak
+# I think these are easier to read than heat maps
+naniar::gg_miss_var(outbreak_df, adm0) + 
+  labs(title = "Country Coverage in Outbreak Data") 
+# missing data in cameroon, democratic republic of the congo, nigeria
+
+# repeat for surveillance 
+naniar::gg_miss_var(surv_df, adm0) +
+  labs(title = "Country Coverage in Surveillance Data")
+# mostly missing data in cameroon, democratic republic of the congo, nigeria
