@@ -1,0 +1,41 @@
+# read in data sets
+surv_df = readRDS("Public_surveillance_dataset.rds") # surveillance data
+outbreak_df = readRDS("Public_outbreak_dataset.rds") # outbreak data
+
+# break out column names in surveillance 
+surv_df = separate_wider_delim(surv_df,
+                               location_name,
+                               "::",
+                               names = c("region","adm0", "adm1", "adm2","adm3"),
+                               too_few = c("align_start"))
+# adds four columns
+
+# break out column names in outbreak
+outbreak_df = separate_wider_delim(outbreak_df,
+                                   location_name,
+                                   "::",
+                                   names = c("region","adm0", "adm1", "adm2","adm3"),
+                                   too_few = c("align_start"))
+# adds four columns
+
+#### SOME DATA EXPLORATION #### 
+
+# look at unique locations at each spatial scale, surveillance
+surv_regions = unique(surv_df$region)
+surv_adm0 = unique(surv_df$adm0)
+surv_adm1 = unique(surv_df$adm1)
+surv_adm2 = unique(surv_df$adm2)
+surv_adm3 = unique(surv_df$adm3)
+
+# repeat for outbreak
+outbreak_regions = unique(outbreak_df$region)
+outbreak_adm0 = unique(outbreak_df$adm0)
+outbreak_adm1 = unique(outbreak_df$adm1)
+outbreak_adm2 = unique(outbreak_df$adm2)
+outbreak_adm3 = unique(outbreak_df$adm3)
+
+# look at range of dates included 
+range(surv_df$epiweek)
+# 2009 to 2023 for surveillance
+range(outbreak_df$TL)
+# 2010 to 2023 for outbreak
