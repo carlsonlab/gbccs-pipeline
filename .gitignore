@@ -46,3 +46,4 @@ po/*~
 rsconnect/
 .DS_Store
 .vscode/settings.json
+/data/cru/raw/cru_ts_4.09
