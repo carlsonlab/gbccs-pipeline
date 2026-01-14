@@ -130,7 +130,7 @@
                         
                         
                         <form class="form-signin" id="auth_form" name="auth_form" action="/account/signin/" method="post">
-                            <input type="hidden" name="csrfmiddlewaretoken" value="bDho4BuLy1tCvM1frAZUBK8aNk7uaHcBvNl16fn0gPhKh2HGBpsuStzUkWwnvFmu">
+                            <input type="hidden" name="csrfmiddlewaretoken" value="kITJHH8BN46l091FOKqGg84XHgYzQBFQQV97bExubXNJdehxD1F96Lr7Of26MYai">
                             
                             <div class="form-row mb-2">
                                 <label for="id_username" class="sr-only">Username</label>
