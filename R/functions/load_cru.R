@@ -1,4 +1,5 @@
-#' Load raw, unbiased CRU data
+#' Load raw, unbiased CRU data.
+#' NOTE: THIS IS CURRENTLY DEPRECATED!! In theory it would work, but you actually just have to point and click all the files on their site and unzip them manually to get uncorrupted versions.
 #'
 #' @title load_cru
 #' @description This function downloads and unzips CRU TS 4.09 data for specified climate variables from CEDA website from 1901 to 2024 (most recent version as of Dec 2025)
@@ -7,11 +8,13 @@
 #' @param file_format The file format of the data files. Default is "dat.nc" which is the NetCDF format.
 #' @return Nothing But downloads and unzips the files in the "data/cru/raw" directory.
 
+# TODO: Come back to this and make it handle access tokens instead
+
 load_cru <- function(covs = c("tmp", "tmn", "tmx", "pre", "pet"),
                      file_format = "dat.nc") {
   base <- "https://data.ceda.ac.uk/badc/cru/data/cru_ts/cru_ts_4.09/data"
 
-  output_dir <- here::here("data", "cru", "raw")
+  output_dir <- here::here("data", "cru", "raw", "cru_ts_4.09")
 
   for (var in covs) {
     file_name <- paste0("cru_ts4.09.1901.2024.", var, ".", file_format, ".gz")
