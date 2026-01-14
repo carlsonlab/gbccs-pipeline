@@ -1,0 +1,7 @@
+{
+    "r.rterm.linux": "/usr/local/bin/R",
+    "files.associations": {
+        "*.R": "r"
+    },
+    "editor.formatOnSave": true
+}

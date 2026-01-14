@@ -1,0 +1,32 @@
+Package: attribution.pipeline
+Type: Project
+Title: Climate Change Attribution Pipeline
+Version: 0.0.0.9000
+Authors@R:
+    person(given = "Cole",
+           family = "Brookson",
+           role = c("aut", "cre"),
+           email = "cole.brookson@yale.edu")
+    person(given = "Hailey", 
+           family = "Robertson", 
+           role = c("aut", "cre"),
+           email = "hailey.robertson@yale.edu")
+Description: A pipeline to support climate change attribution on infectious 
+    diseases that runs simply on a local machine (containerized) or on an HPC
+    with Apptainer. 
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.4)
+Imports:
+    dplyr,
+    readr,
+    tidyr, 
+    conflicted,
+    here,
+    qs2,
+    ggplot2, 
+    tibble,
+    patchwork,
+    qs,
+    jsonlite
