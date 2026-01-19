@@ -14,7 +14,7 @@
 #' - date: %Y-%m-%d
 #' - covs (above)
 
-extract_cru <- function(
+extractClimate <- function(
   covs = c("tmp", "tmn", "tmx", "pre", "pet"),
   data_dir = here::here("data", "cru", "raw", "cru_ts_4.09"),
   polygons, # e.g., = terra::vect("path/to/cholera.shp")
@@ -24,7 +24,7 @@ extract_cru <- function(
   # Explicitly set each layer to the variable name
   # TODO: maybe use OS or similar to just grab all files in the data_dir? to avoid hard coding versions / years wihch might change
   # NOTE: Also tried this with ncdf4, but ran into RAM issues
-  read_cru <- function(var, data_dir) {
+  readClimate <- function(var, data_dir) {
     var_file <- paste0("cru_ts4.09.1901.2024.", var, ".dat.nc")
     var_path <- file.path(data_dir, var_file)
 
@@ -37,7 +37,7 @@ extract_cru <- function(
   }
 
   # HELPER: extract the variable means for each polygon for each month
-  extract_var <- function(cru_raster, var, polygons) {
+  extractVar <- function(cru_raster, var, polygons) {
     df <- terra::extract(cru_raster, polygons, fun = mean, na.rm = TRUE)
     dates <- terra::time(cru_raster)
     long <- df %>%
@@ -54,11 +54,11 @@ extract_cru <- function(
     return(long)
   }
 
-  cru <- lapply(covs, read_cru, cru_data_dir)
+  cru <- lapply(covs, readClimate, cru_data_dir)
   names(cru) <- covs
 
   all_vars <- lapply(seq_along(covs), function(i) {
-    extract_var(cru[[i]], covs[i], polygons)
+    extractVar(cru[[i]], covs[i], polygons)
   })
 
   # Merge it all into one table with one row per time/place
