@@ -15,11 +15,10 @@
 #' - covs (above)
 
 extractClimate <- function(
-  covs = c("tmp", "tmn", "tmx", "pre", "pet"),
-  data_dir = here::here("data", "cru", "raw", "cru_ts_4.09"),
-  polygons, # e.g., = terra::vect("path/to/cholera.shp")
-  out_dir = here::here("data", "cru", "clean")
-) {
+    covs = c("tmp", "tmn", "tmx", "pre", "pet"),
+    data_dir = here::here("data", "cru", "raw", "cru_ts_4.09"),
+    polygons, # e.g., = terra::vect("path/to/cholera.shp")
+    out_dir = here::here("data", "cru", "clean")) {
   # HELPER: read in the CRU data for each variable of interest
   # Explicitly set each layer to the variable name
   # TODO: maybe use OS or similar to just grab all files in the data_dir? to avoid hard coding versions / years wihch might change
@@ -54,7 +53,7 @@ extractClimate <- function(
     return(long)
   }
 
-  cru <- lapply(covs, readClimate, cru_data_dir)
+  cru <- lapply(covs, readClimate, data_dir)
   names(cru) <- covs
 
   all_vars <- lapply(seq_along(covs), function(i) {
