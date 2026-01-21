@@ -1,4 +1,4 @@
-#' Extract CRU polygon means and save
+#' Extract CRU polygon means and save to .csv
 #'
 #' @param covs String vector of covariates we want; by default this is including:
 #' - tmp (montly average daily mean temp)
@@ -6,8 +6,8 @@
 #' - tmx (monthly average daily max temp)
 #' - pre (monthly rainfall)
 #' - pet (potential evapotranspiration)
-#' @param data_dir The directory with raw CRU .dat.nc files
-#' @param polygons File path to SpatVector of polygons
+#' @param data_dir The directory with raw, unzipped CRU .dat.nc files (have to #' download these manually, as of writing! See README.md)
+#' @param polygons File path to SpatVector of polygons (e.g., adm1 shapefiles)
 #' - TODO: potentially write some function that defines the extent (e.g.,
 #' Africa, global, whatever) and then uses that as a parameter so everything is
 #' the right way
