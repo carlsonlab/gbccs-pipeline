@@ -8,6 +8,9 @@
 #' - pet (potential evapotranspiration)
 #' @param data_dir The directory with raw CRU .dat.nc files
 #' @param polygons File path to SpatVector of polygons
+#' - TODO: potentially write some function that defines the extent (e.g.,
+#' Africa, global, whatever) and then uses that as a parameter so everything is
+#' the right way
 #' @param out_dir The directory for saving clean CRU extraction to CSV
 #' @return cru_extract Tibble (1488 x 7) with columns
 #' - ID: polygon ID (currently)
@@ -27,6 +30,7 @@ extractClimate <- function(
     var_file <- paste0("cru_ts4.09.1901.2024.", var, ".dat.nc")
     var_path <- file.path(data_dir, var_file)
 
+    # 0.5 x 0.5, CRS84 for cru
     r <- terra::rast(var_path, subds = var)
 
     # each layer = 1 momth
@@ -36,8 +40,18 @@ extractClimate <- function(
   }
 
   # HELPER: extract the variable means for each polygon for each month
+  # Currently uses an area-weighted average, so gives mean weighted by fraction of each CRU grid cell within the admin polygon
+  # NOTE/TODO: CRU projection needs to match the polygon projection and extent
   extractVar <- function(cru_raster, var, polygons) {
-    df <- terra::extract(cru_raster, polygons, fun = mean, na.rm = TRUE)
+    # I'm not sure I should do this (reproject???) - don't think it makes a big difference though
+    # NOTE: polygons needs to be a terravector
+    polygons <- terra::vect(polygons)
+    polygons <- terra::project(polygons, terra::crs(cru_raster))
+    cru_raster <- terra::crop(cru_raster, polygons)
+
+    # Makes only a slight difference if we use weights or not
+    # TODO: plot / do sensitivity analysis at administrative level
+    df <- terra::extract(cru_raster, polygons, fun = mean, na.rm = TRUE, weights = TRUE)
     dates <- terra::time(cru_raster)
     long <- df %>%
       tidyr::pivot_longer(
