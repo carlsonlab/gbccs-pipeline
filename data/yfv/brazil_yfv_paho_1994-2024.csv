@@ -1,0 +1,717 @@
+﻿id,country,year,adm1,adm2,cases,fatal_cases
+1,Brazil,1994,Roraima,Alto Alegre,1,1
+2,Brazil,1995,Roraima,Pacaraima,1,0
+3,Brazil,1995,Para,Conceicao Do Araguaia,1,1
+4,Brazil,1995,Maranhao,Amarante Do Maranhao,2,1
+5,Brazil,1994,Unknown,Unknown,18,5
+6,Brazil,1996,Mato Grosso do Sul,Ponta Pora,1,1
+7,Brazil,1996,Amazonas,Anori,1,1
+8,Brazil,1996,Amazonas,Barcelos,1,0
+9,Brazil,1996,Amazonas,Careiro,1,1
+10,Brazil,1996,Amazonas,Iranduba,1,1
+11,Brazil,1996,Amazonas,Manacapuru,2,2
+12,Brazil,1996,Amazonas,Manaquiri,2,2
+13,Brazil,1996,Amazonas,Manaus,1,1
+14,Brazil,1996,Amazonas,Rio Preto Da Eva,1,1
+15,Brazil,1996,Amazonas,Santa Isabel Do Rio Negro,2,2
+16,Brazil,1996,Amazonas,Tabatinga,1,0
+17,Brazil,1996,Amazonas,Tapaua,1,1
+18,Brazil,1997,Rondonia,Porto Velho,1,1
+19,Brazil,1997,Para,Almeirim,2,2
+20,Brazil,1998,Mato Grosso,Marcelandia,1,1
+21,Brazil,1998,Amazonas,Presidente Figueiredo,2,1
+22,Brazil,1998,Amazonas,Santa Isabel Do Rio Negro,1,0
+23,Brazil,1998,Roraima,Alto Alegre,5,2
+24,Brazil,1998,Roraima,Iracema,1,1
+25,Brazil,1998,Roraima,Mucajai,1,1
+26,Brazil,1998,Para,Afua,17,3
+27,Brazil,1998,Para,Bannach,1,1
+28,Brazil,1998,Para,Floresta Do Araguaia,1,1
+29,Brazil,1998,Para,Gurupa,1,0
+30,Brazil,1998,Para,Itaituba,1,1
+31,Brazil,1998,Para,Obidos,1,1
+32,Brazil,1998,Para,Redencao,1,1
+33,Brazil,1998,Unknown,Unknown,3,1
+34,Brazil,1999,Roraima,Canta,1,0
+35,Brazil,1999,Roraima,Uiramuta,2,2
+36,Brazil,1999,Amazonas,Boca Do Acre,1,0
+37,Brazil,1999,Amazonas,Itacoatiara,3,3
+38,Brazil,1999,Amazonas,Novo Airao,1,1
+39,Brazil,1999,Mato Grosso,Campinapolis,2,1
+40,Brazil,1999,Mato Grosso,Nova Guarita,2,2
+41,Brazil,1999,Mato Grosso,Peixoto De Azebedo,1,1
+42,Brazil,1999,Goias,Alto Paraiso De Goias,3,2
+43,Brazil,1999,Goias,Colinas Do Sul,1,0
+44,Brazil,1999,Goias,Goias,1,1
+45,Brazil,1999,Goias,Minacu,4,2
+46,Brazil,1999,Goias,Niquelandia,1,0
+47,Brazil,1999,Goias,Sao Joao D'alianca,1,0
+48,Brazil,1999,Tocantins,Ananas,1,1
+49,Brazil,1999,Tocantins,Figueiropolis,9,1
+50,Brazil,1999,Tocantins,Guarai,1,1
+51,Brazil,1999,Tocantins,Parana,1,0
+52,Brazil,1999,Tocantins,Pedro Afonso,1,0
+53,Brazil,1999,Tocantins,Recursolandia,2,1
+54,Brazil,1999,Para,Afua,17,4
+55,Brazil,1999,Para,Breves,14,2
+56,Brazil,1999,Para,Conceicao Do Araguaia,2,1
+57,Brazil,1999,Para,Redencao,1,1
+58,Brazil,1999,Para,Santa Maria Das Barreiras,2,1
+59,Brazil,1999,Unknown,Unknown,4,0
+60,Brazil,2000,Acre,Placido De Castro,1,0
+61,Brazil,2000,Amazonas,Manacapuru,1,0
+62,Brazil,2000,Para,Anajas,1,1
+63,Brazil,2000,Distrito Federal,Brasilia,2,2
+64,Brazil,2000,Minas Gerais,Natalandia,1,1
+65,Brazil,2000,Minas Gerais,Planura,1,1
+66,Brazil,2000,Sao Paulo,Ouroeste,1,1
+67,Brazil,2000,Sao Paulo,Santa Albertina,1,1
+68,Brazil,2000,Tocantins,Almas,2,2
+69,Brazil,2000,Tocantins,Arraias,2,1
+70,Brazil,2000,Tocantins,Aurora Do Tocantins,1,1
+71,Brazil,2000,Tocantins,Campos Lindos,1,0
+72,Brazil,2000,Mato Grosso,Barra Do Garcas,1,0
+73,Brazil,2000,Mato Grosso,Diamantino,1,1
+74,Brazil,2000,Mato Grosso,Juina,1,0
+75,Brazil,2000,Mato Grosso,Nobres,1,1
+76,Brazil,2000,Mato Grosso,Nova Canaa Do Norte,1,1
+77,Brazil,2000,Mato Grosso,Porto Dos Gauchos,1,0
+78,Brazil,2000,Mato Grosso,Querencia,1,0
+79,Brazil,2000,Bahia,Coribe,10,3
+80,Brazil,2000,Goias,Alexania,1,0
+81,Brazil,2000,Goias,Alto Paraiso De Goias,7,0
+82,Brazil,2000,Goias,Amaralina,2,1
+83,Brazil,2000,Goias,Avelinopolis,1,1
+84,Brazil,2000,Goias,Bonopolis,1,1
+85,Brazil,2000,Goias,Cabeceiras,1,0
+86,Brazil,2000,Goias,Cachoeira De Goias,1,0
+87,Brazil,2000,Goias,Cavalcante,2,0
+88,Brazil,2000,Goias,Corumba De Goias,1,0
+89,Brazil,2000,Goias,Corumbaiba,1,1
+90,Brazil,2000,Goias,Doverlandia,2,2
+91,Brazil,2000,Goias,Flores De Goias,1,0
+92,Brazil,2000,Goias,Itaguaru,1,0
+93,Brazil,2000,Goias,Jaragua,1,0
+94,Brazil,2000,Goias,Jussara,1,1
+95,Brazil,2000,Goias,Mara Rosa,1,0
+96,Brazil,2000,Goias,Mimoso De Goias,2,1
+97,Brazil,2000,Goias,Minacu,1,0
+98,Brazil,2000,Goias,Niquelandia,4,4
+99,Brazil,2000,Goias,Nova Roma,2,1
+100,Brazil,2000,Goias,Novo Brasil,1,0
+101,Brazil,2000,Goias,Padre Bernardo,3,1
+102,Brazil,2000,Goias,Planaltina,7,4
+103,Brazil,2000,Goias,Santa Fe De Goias,1,1
+104,Brazil,2000,Goias,Sao Joao D'alianca,2,1
+105,Brazil,2000,Goias,Serranopolis,1,0
+106,Brazil,2000,Goias,Teresina De Goias,1,0
+107,Brazil,2000,Goias,Uruacu,1,1
+108,Brazil,2000,Goias,Uruana,1,1
+109,Brazil,2000,Goias,Vila Propicio,1,1
+110,Brazil,2001,Rondonia,Porto Velho,1,1
+111,Brazil,2001,Roraima,Canta,1,1
+112,Brazil,2001,Mato Grosso,Comodoro,1,0
+113,Brazil,2001,Mato Grosso,Porto Esperidiao,1,1
+114,Brazil,2001,Para,Goianesia Do Para,1,0
+115,Brazil,2001,Para,Juruti,1,1
+116,Brazil,2001,Amazonas,Borba,2,1
+117,Brazil,2001,Amazonas,Itacoatiara,1,1
+118,Brazil,2001,Minas Gerais,Bom Despacho,4,3
+119,Brazil,2001,Minas Gerais,Conceicao Do Para,1,0
+120,Brazil,2001,Minas Gerais,Dores Do Indaia,2,1
+121,Brazil,2001,Minas Gerais,Estrela Do Indaia,3,2
+122,Brazil,2001,Minas Gerais,Leandro Ferreira,7,5
+123,Brazil,2001,Minas Gerais,Luz,1,0
+124,Brazil,2001,Minas Gerais,Martinho Campos,2,1
+125,Brazil,2001,Minas Gerais,Nova Serrana,4,0
+126,Brazil,2001,Minas Gerais,Para De Minas,1,0
+127,Brazil,2001,Minas Gerais,Pitangui,1,1
+128,Brazil,2001,Minas Gerais,Santo Antonio Do Monte,4,3
+129,Brazil,2001,Minas Gerais,Sao Gotardo,2,0
+130,Brazil,2002,Para,Breves,1,1
+131,Brazil,2002,Roraima,Alto Alegre,1,1
+132,Brazil,2002,Roraima,Mucajai,1,0
+133,Brazil,2002,Amazonas,Barcelos,1,1
+134,Brazil,2002,Amazonas,Coari,2,0
+135,Brazil,2002,Amazonas,Manacapuru,1,0
+136,Brazil,2002,Amazonas,Rio Preto Da Eva,1,1
+137,Brazil,2002,Minas Gerais,Leandro Ferreira,1,0
+138,Brazil,2002,Minas Gerais,Serro,5,2
+139,Brazil,2003,Amazonas,Urucurituba,1,0
+140,Brazil,2003,Para,Gurupa,1,0
+141,Brazil,2003,Mato Grosso,Caceres,3,2
+142,Brazil,2003,Mato Grosso,Tangara Da Serra,1,0
+143,Brazil,2003,Mato Grosso,Tapurah,1,0
+144,Brazil,2003,Minas Gerais,Alvorada De Minas,6,1
+145,Brazil,2003,Minas Gerais,Guanhaes,3,1
+146,Brazil,2003,Minas Gerais,Materlandia,1,0
+147,Brazil,2003,Minas Gerais,Sabinopolis,23,8
+148,Brazil,2003,Minas Gerais,Senhora Do Porto,6,4
+149,Brazil,2003,Minas Gerais,Serro,20,8
+150,Brazil,2004,Para,Parauapebas,2,1
+151,Brazil,2004,Amazonas,Iranduba,1,1
+152,Brazil,2004,Amazonas,Itacoatiara,1,1
+153,Brazil,2004,Amazonas,Manaus,1,0
+154,Brazil,2005,Roraima,Mucajai,1,1
+155,Brazil,2005,Amazonas,Coari,1,1
+156,Brazil,2005,Amazonas,Codajas,1,1
+157,Brazil,2006,Amazonas,Iranduba,1,1
+158,Brazil,2006,Mato Grosso,Nova Ubirata,1,1
+159,Brazil,2007,Distrito Federal,Brasilia,1,0
+160,Brazil,2007,Mato Grosso,Juara,1,1
+161,Brazil,2007,Para,Afua,1,0
+162,Brazil,2007,Roraima,Caroebe,1,1
+163,Brazil,2007,Amazonas,Iranduba,1,1
+164,Brazil,2007,Amazonas,Manacapuru,1,1
+165,Brazil,2007,Amazonas,Maues,1,1
+166,Brazil,2007,Goias,Goianesia,1,1
+167,Brazil,2007,Goias,Goiania,1,1
+168,Brazil,2007,Goias,Jatai,2,2
+169,Brazil,2007,Goias,Luziania,1,1
+170,Brazil,2007,Goias,Pirenopolis,1,0
+171,Brazil,2007,Goias,Uruacu,1,1
+172,Brazil,2008,Minas Gerais,Unai,1,0
+173,Brazil,2008,Mato Grosso,Guaranta Do Norte,1,1
+174,Brazil,2008,Mato Grosso,Novo Sao Joaquim,1,1
+175,Brazil,2008,Parana,Laranjal,2,1
+176,Brazil,2008,Sao Paulo,Luis Antonio,1,1
+177,Brazil,2008,Sao Paulo,Sao Carlos,1,1
+178,Brazil,2008,Para,Breves,1,0
+179,Brazil,2008,Para,Novo Repartimento,1,1
+180,Brazil,2008,Para,Parauapebas,1,1
+181,Brazil,2008,Distrito Federal,Brasilia,5,4
+182,Brazil,2008,Rio Grande do Sul,Augusto Pestana,1,1
+183,Brazil,2008,Rio Grande do Sul,Bossoroca,1,0
+184,Brazil,2008,Rio Grande do Sul,Joia,1,1
+185,Brazil,2008,Rio Grande do Sul,Pirapo,1,1
+186,Brazil,2008,Rio Grande do Sul,Santo Angelo,1,1
+187,Brazil,2008,Mato Grosso do Sul,Agua Clara,3,0
+188,Brazil,2008,Mato Grosso do Sul,Aral Moreira,1,1
+189,Brazil,2008,Mato Grosso do Sul,Bonito,3,0
+190,Brazil,2008,Mato Grosso do Sul,Maracaju,1,1
+191,Brazil,2008,Mato Grosso do Sul,Ribas Do Rio Pardo,1,0
+192,Brazil,2008,Goias,Abadiania,1,1
+193,Brazil,2008,Goias,Caldas Novas,3,2
+194,Brazil,2008,Goias,Catalao,1,0
+195,Brazil,2008,Goias,Cristianopolis,2,2
+196,Brazil,2008,Goias,Crixas,1,1
+197,Brazil,2008,Goias,Luziania,2,0
+198,Brazil,2008,Goias,Marzagao,1,0
+199,Brazil,2008,Goias,Padre Bernardo,1,0
+200,Brazil,2008,Goias,Pirenopolis,2,1
+201,Brazil,2008,Goias,Planaltina,1,1
+202,Brazil,2008,Goias,Rubiataba,2,2
+203,Brazil,2009,Minas Gerais,Uba,1,0
+204,Brazil,2009,Mato Grosso,Feliz Natal,1,0
+205,Brazil,2009,Mato Grosso,Uniao Do Sul,1,1
+206,Brazil,2009,Rio Grande do Sul,Espumoso,1,0
+207,Brazil,2009,Rio Grande do Sul,Ijui,1,1
+208,Brazil,2009,Rio Grande do Sul,Pirapo,1,0
+209,Brazil,2009,Rio Grande do Sul,Santa Cruz Do Sul,7,0
+210,Brazil,2009,Rio Grande do Sul,Santo Angelo,2,2
+211,Brazil,2009,Rio Grande do Sul,Vera Cruz,4,2
+212,Brazil,2009,Sao Paulo,Avare,1,0
+213,Brazil,2009,Sao Paulo,Buri,5,3
+214,Brazil,2009,Sao Paulo,Itatinga,3,1
+215,Brazil,2009,Sao Paulo,Piraju,14,6
+216,Brazil,2009,Sao Paulo,Sarutaia,5,1
+217,Brazil,2010,Mato Grosso do Sul,Corumba,1,1
+218,Brazil,2010,Para,Breves,1,1
+219,Brazil,2011,Para,Bagre,1,0
+220,Brazil,2011,Para,Tailandia,1,1
+221,Brazil,2013,Para,Acara,1,0
+222,Brazil,2013,Amazonas,Anori,1,0
+223,Brazil,2013,Amazonas,Novo Airao,1,0
+224,Brazil,2014,Para,Monte Alegre,1,0
+225,Brazil,2015,Mato Grosso do Sul,Bonito,1,1
+226,Brazil,2015,Para,Afua,1,0
+227,Brazil,2015,Para,Gurupa,1,0
+228,Brazil,2015,Goias,Alexania,1,0
+229,Brazil,2015,Goias,Alto Paraiso De Goias,2,1
+230,Brazil,2015,Goias,Cumari,1,1
+231,Brazil,2015,Goias,Niquelandia,1,1
+232,Brazil,2015,Goias,Sao Miguel Do Araguaia,1,1
+233,Brazil,2016,Amazonas,Itapiranga,1,1
+234,Brazil,2016,Amazonas,Manacapuru,1,0
+235,Brazil,2016,Goias,Goiania,1,1
+236,Brazil,2016,Goias,Sao Luis De Montes Belos,1,1
+237,Brazil,2016,Goias,Senador Canedo,1,1
+238,Brazil,2016,Sao Paulo,Bady Bassitt,1,1
+239,Brazil,2016,Sao Paulo,Ribeirao Preto,1,1
+240,Brazil,2016,Sao Paulo,Santa Lucia,1,1
+241,Brazil,2016,Minas Gerais,Caratinga,2,1
+242,Brazil,2016,Minas Gerais,Delfinopolis,2,2
+243,Brazil,2016,Minas Gerais,Entre Folhas,1,0
+244,Brazil,2016,Minas Gerais,Frei Gaspar,1,0
+245,Brazil,2016,Minas Gerais,Imbe De Minas,4,1
+246,Brazil,2016,Minas Gerais,Inhapim,1,1
+247,Brazil,2016,Minas Gerais,Ipanema,2,2
+248,Brazil,2016,Minas Gerais,Itambacuri,4,2
+249,Brazil,2016,Minas Gerais,Ladainha,7,6
+250,Brazil,2016,Minas Gerais,Malacacheta,3,2
+251,Brazil,2016,Minas Gerais,Novo Cruzeiro,1,1
+253,Brazil,2016,Minas Gerais,Paulistas,2,2
+252,Brazil,2016,Minas Gerais,Piedade De Caratinga,4,3
+254,Brazil,2016,Minas Gerais,Pote,2,2
+255,Brazil,2016,Minas Gerais,Sao Sebastiao Do Maranhao,3,2
+256,Brazil,2016,Minas Gerais,Teofilo Otoni,2,2
+257,Brazil,2016,Minas Gerais,Ubaporanga,2,1
+258,Brazil,2017,Amazonas,Autazes,1,0
+259,Brazil,2017,Goias,Amorinopolis,1,1
+260,Brazil,2017,Mato Grosso,Barra Do Garcas,1,1
+261,Brazil,2017,Tocantins,Xambioa,1,1
+262,Brazil,2017,Distrito Federal,Brasilia,2,2
+263,Brazil,2017,Para,Alenquer,4,3
+264,Brazil,2017,Para,Juruti,1,0
+265,Brazil,2017,Para,Monte Alegre,3,1
+266,Brazil,2017,Rio de Janeiro,Bom Jesus Do Itabapoana,2,0
+267,Brazil,2017,Rio de Janeiro,Cachoeiras De Macacu,1,0
+268,Brazil,2017,Rio de Janeiro,Casimiro De Abreu,8,1
+269,Brazil,2017,Rio de Janeiro,Duas Barras,1,0
+270,Brazil,2017,Rio de Janeiro,Guapimirim,1,0
+271,Brazil,2017,Rio de Janeiro,Macae,5,2
+272,Brazil,2017,Rio de Janeiro,Marica,3,1
+273,Brazil,2017,Rio de Janeiro,Porciuncula,2,2
+274,Brazil,2017,Rio de Janeiro,Santa Maria Madalena,1,1
+275,Brazil,2017,Rio de Janeiro,Sao Fidelis,1,0
+276,Brazil,2017,Rio de Janeiro,Silva Jardim,1,1
+277,Brazil,2017,Rio de Janeiro,Valenca,2,1
+278,Brazil,2017,Sao Paulo,Aguas Da Prata,2,0
+279,Brazil,2017,Sao Paulo,Americo Brasiliense,2,1
+280,Brazil,2017,Sao Paulo,Amparo,4,2
+281,Brazil,2017,Sao Paulo,Atibaia,10,8
+282,Brazil,2017,Sao Paulo,Batatais,1,1
+283,Brazil,2017,Sao Paulo,Braganca Paulista,1,0
+284,Brazil,2017,Sao Paulo,Caieiras,2,1
+285,Brazil,2017,Sao Paulo,Campinas,1,0
+286,Brazil,2017,Sao Paulo,Franco Da Rocha,1,1
+287,Brazil,2017,Sao Paulo,Indaiatuba,1,1
+288,Brazil,2017,Sao Paulo,Itatiba,2,1
+289,Brazil,2017,Sao Paulo,Jarinu,1,1
+290,Brazil,2017,Sao Paulo,Jundiai,1,0
+291,Brazil,2017,Sao Paulo,Mairipora,29,12
+292,Brazil,2017,Sao Paulo,Mococa,1,0
+293,Brazil,2017,Sao Paulo,Monte Alegre Do Sul,6,3
+294,Brazil,2017,Sao Paulo,Nazare Paulista,2,1
+295,Brazil,2017,Sao Paulo,Piracicaba,1,0
+296,Brazil,2017,Sao Paulo,Santa Cruz Do Rio Pardo,1,0
+297,Brazil,2017,Sao Paulo,Sao Joao Da Boa Vista,1,1
+298,Brazil,2017,Sao Paulo,Sao Paulo,4,2
+299,Brazil,2017,Sao Paulo,Socorro,1,0
+300,Brazil,2017,Sao Paulo,Tuiuti,1,0
+301,Brazil,2017,Espirito Santo,Alfonso Claudio,10,3
+302,Brazil,2017,Espirito Santo,Alfredo Chaves,9,4
+303,Brazil,2017,Espirito Santo,Alto Rio Novo,1,0
+304,Brazil,2017,Espirito Santo,Anchieta,1,0
+305,Brazil,2017,Espirito Santo,Aracruz,1,1
+306,Brazil,2017,Espirito Santo,Baixo Guandu,5,0
+307,Brazil,2017,Espirito Santo,Brejetuba,9,3
+308,Brazil,2017,Espirito Santo,Cachoeiro De Itapemirim,1,0
+309,Brazil,2017,Espirito Santo,Cariacica,5,4
+310,Brazil,2017,Espirito Santo,Castelo,6,0
+311,Brazil,2017,Espirito Santo,Colatina,20,4
+312,Brazil,2017,Espirito Santo,Conceicao Da Barra,1,1
+313,Brazil,2017,Espirito Santo,Conceicao Do Castelo,7,2
+314,Brazil,2017,Espirito Santo,Domingos Martins,24,8
+315,Brazil,2017,Espirito Santo,Gurapari,1,0
+316,Brazil,2017,Espirito Santo,Ibatiba,16,2
+317,Brazil,2017,Espirito Santo,Ibitirama,1,0
+318,Brazil,2017,Espirito Santo,Irupi,4,3
+319,Brazil,2017,Espirito Santo,Itaguacu,4,0
+320,Brazil,2017,Espirito Santo,Itarana,5,3
+322,Brazil,2017,Espirito Santo,Laranjal,4,1
+323,Brazil,2017,Espirito Santo,Linhares,1,1
+324,Brazil,2017,Espirito Santo,Marechal Floriano,15,7
+325,Brazil,2017,Espirito Santo,Marilandia,2,1
+326,Brazil,2017,Espirito Santo,Muniz Freire,5,4
+327,Brazil,2017,Espirito Santo,Muqui,1,0
+328,Brazil,2017,Espirito Santo,Pancas,5,2
+329,Brazil,2017,Espirito Santo,Santa Leopoldina,37,8
+330,Brazil,2017,Espirito Santo,Santa Maria De Jetiba,13,7
+331,Brazil,2017,Espirito Santo,Santa Teresa,10,5
+332,Brazil,2017,Espirito Santo,Sao Mateus,2,1
+333,Brazil,2017,Espirito Santo,Sao Roque Do Canaa,5,1
+334,Brazil,2017,Espirito Santo,Serra,11,3
+335,Brazil,2017,Espirito Santo,Vargem Alta,3,2
+336,Brazil,2017,Espirito Santo,Venda Nova Do Imigrante,3,2
+337,Brazil,2017,Espirito Santo,Viana,5,1
+338,Brazil,2017,Espirito Santo,Vitoria,2,0
+339,Brazil,2017,Minas Gerais,Agua Boa,1,0
+340,Brazil,2017,Minas Gerais,Aimores,5,1
+341,Brazil,2017,Minas Gerais,Alvarenga,2,0
+342,Brazil,2017,Minas Gerais,Aracuai,1,1
+343,Brazil,2017,Minas Gerais,Barra Longa,1,1
+344,Brazil,2017,Minas Gerais,Bom Jesus Do Galho,6,1
+345,Brazil,2017,Minas Gerais,Brumadinho,2,1
+346,Brazil,2017,Minas Gerais,Canaa,1,1
+347,Brazil,2017,Minas Gerais,Capelinha,1,0
+348,Brazil,2017,Minas Gerais,Capitolio,2,1
+349,Brazil,2017,Minas Gerais,Caputira,1,1
+350,Brazil,2017,Minas Gerais,Carai,1,0
+351,Brazil,2017,Minas Gerais,Carangola,2,1
+352,Brazil,2017,Minas Gerais,Caratinga,32,1
+353,Brazil,2017,Minas Gerais,Carmo Da Mata,1,1
+354,Brazil,2017,Minas Gerais,Chale,2,0
+355,Brazil,2017,Minas Gerais,Coluna,3,0
+356,Brazil,2017,Minas Gerais,Conceicao De Ipanema,3,1
+357,Brazil,2017,Minas Gerais,Conselheiro Pena,1,0
+358,Brazil,2017,Minas Gerais,Coronel Fabriciano,1,0
+359,Brazil,2017,Minas Gerais,Delfinopolis,3,2
+360,Brazil,2017,Minas Gerais,Divino,1,0
+361,Brazil,2017,Minas Gerais,Durande,2,0
+362,Brazil,2017,Minas Gerais,Entre Folhas,3,1
+363,Brazil,2017,Minas Gerais,Esmeraldas,1,1
+364,Brazil,2017,Minas Gerais,Felicio Dos Santos,3,0
+365,Brazil,2017,Minas Gerais,Fervedouro,1,1
+366,Brazil,2017,Minas Gerais,Fortuna De Minas,1,1
+367,Brazil,2017,Minas Gerais,Franciscopolis,1,0
+368,Brazil,2017,Minas Gerais,Frei Gaspar,13,3
+369,Brazil,2017,Minas Gerais,Goiana,1,1
+370,Brazil,2017,Minas Gerais,Imbe De Minas,7,1
+371,Brazil,2017,Minas Gerais,Inhapim,4,1
+372,Brazil,2017,Minas Gerais,Ipanema,18,5
+373,Brazil,2017,Minas Gerais,Ipatinga,2,1
+374,Brazil,2017,Minas Gerais,Itaipe,1,0
+375,Brazil,2017,Minas Gerais,Itambacuri,13,9
+376,Brazil,2017,Minas Gerais,Itanhomi,2,0
+377,Brazil,2017,Minas Gerais,Itueta,5,1
+378,Brazil,2017,Minas Gerais,Januaria,2,1
+379,Brazil,2017,Minas Gerais,Jequitinhonha,1,0
+380,Brazil,2017,Minas Gerais,Jose Raydan,6,4
+381,Brazil,2017,Minas Gerais,Juiz De Fora,1,0
+382,Brazil,2017,Minas Gerais,Ladainha,45,13
+383,Brazil,2017,Minas Gerais,Lajinha,17,3
+384,Brazil,2017,Minas Gerais,Malacacheta,4,1
+385,Brazil,2017,Minas Gerais,Manhuacu,11,3
+386,Brazil,2017,Minas Gerais,Manhumirim,3,2
+387,Brazil,2017,Minas Gerais,Mar De Espanha,1,1
+388,Brazil,2017,Minas Gerais,Mariana,2,2
+389,Brazil,2017,Minas Gerais,Martins Soares,1,0
+390,Brazil,2017,Minas Gerais,Matipo,1,0
+391,Brazil,2017,Minas Gerais,Minas Novas,3,0
+392,Brazil,2017,Minas Gerais,Mutum,6,0
+393,Brazil,2017,Minas Gerais,Nanuque,2,0
+394,Brazil,2017,Minas Gerais,Nova Lima,2,2
+395,Brazil,2017,Minas Gerais,Novo Cruzeiro,34,11
+396,Brazil,2017,Minas Gerais,Ouru Verde De Minas,1,1
+397,Brazil,2017,Minas Gerais,Padre Paraiso,1,1
+398,Brazil,2017,Minas Gerais,Pecanha,1,0
+399,Brazil,2017,Minas Gerais,Piedade De Caratinga,6,4
+400,Brazil,2017,Minas Gerais,Pocrane,1,1
+401,Brazil,2017,Minas Gerais,Ponte Nova,1,1
+402,Brazil,2017,Minas Gerais,Pote,24,6
+403,Brazil,2017,Minas Gerais,Raul Soares,1,0
+404,Brazil,2017,Minas Gerais,Reduto,1,1
+405,Brazil,2017,Minas Gerais,Sabara,1,0
+406,Brazil,2017,Minas Gerais,Santa Barbara Do Leste,7,0
+407,Brazil,2017,Minas Gerais,Santa Maria Do Suacui,6,0
+408,Brazil,2017,Minas Gerais,Santa Rita De Minas,2,1
+409,Brazil,2017,Minas Gerais,Santa Rita Do Itueto,8,4
+410,Brazil,2017,Minas Gerais,Santana Do Manhuaca,3,0
+411,Brazil,2017,Minas Gerais,Sao Joao Evangelista,2,1
+412,Brazil,2017,Minas Gerais,Sao Jose Do Jacuri,2,0
+413,Brazil,2017,Minas Gerais,Sao Jose Do Mantimento,3,0
+414,Brazil,2017,Minas Gerais,Sao Roque De Minas,1,0
+415,Brazil,2017,Minas Gerais,Sao Sebastiao Do Maranhao,10,1
+416,Brazil,2017,Minas Gerais,Setubinha,18,6
+417,Brazil,2017,Minas Gerais,Simonesia,12,5
+418,Brazil,2017,Minas Gerais,Teofilo Otoni,17,11
+419,Brazil,2017,Minas Gerais,Ubaporanga,3,1
+420,Brazil,2017,Minas Gerais,Vargem Bonita,1,0
+421,Brazil,2017,Minas Gerais,Vargem Grande Do Rio Pardo,2,2
+422,Brazil,2017,Unknown,Unknown,6,2
+423,Brazil,2018,Amazonas,Humaita,1,0
+424,Brazil,2018,Espirito Santo,Alfredo Chaves,1,0
+425,Brazil,2018,Espirito Santo,Cariacica,1,0
+426,Brazil,2018,Espirito Santo,Serra,1,0
+427,Brazil,2018,Rio de Janeiro,Angra Dos Reis,66,19
+428,Brazil,2018,Rio de Janeiro,Barra Do Pirai,11,5
+429,Brazil,2018,Rio de Janeiro,Bom Jardim,1,0
+430,Brazil,2018,Rio de Janeiro,Cachoeiras De Macacu,3,1
+431,Brazil,2018,Rio de Janeiro,Cantagalo,7,4
+432,Brazil,2018,Rio de Janeiro,Carmo,2,1
+433,Brazil,2018,Rio de Janeiro,Duas Barras,13,2
+434,Brazil,2018,Rio de Janeiro,Engenheiro Paulo De Frontin,6,3
+435,Brazil,2018,Rio de Janeiro,Guapimirim,1,0
+436,Brazil,2018,Rio de Janeiro,Itaborai,1,0
+437,Brazil,2018,Rio de Janeiro,Italva,1,0
+438,Brazil,2018,Rio de Janeiro,Itatiaia,4,1
+439,Brazil,2018,Rio de Janeiro,Mangaratiba,2,0
+440,Brazil,2018,Rio de Janeiro,Marica,2,1
+441,Brazil,2018,Rio de Janeiro,Miguel Pereira,5,2
+442,Brazil,2018,Rio de Janeiro,Niteroi,1,0
+443,Brazil,2018,Rio de Janeiro,Nova Friburgo,20,9
+444,Brazil,2018,Rio de Janeiro,Nova Iguacu,1,0
+445,Brazil,2018,Rio de Janeiro,Paraiba Do Sul,1,1
+446,Brazil,2018,Rio de Janeiro,Paraty,10,3
+447,Brazil,2018,Rio de Janeiro,Paty Do Alferes,4,2
+448,Brazil,2018,Rio de Janeiro,Petropolis,4,1
+449,Brazil,2018,Rio de Janeiro,Pinheiral,1,0
+450,Brazil,2018,Rio de Janeiro,Pirai,3,1
+451,Brazil,2018,Rio de Janeiro,Resende,7,3
+452,Brazil,2018,Rio de Janeiro,Rio Bonito,2,2
+453,Brazil,2018,Rio de Janeiro,Rio Claro,6,3
+454,Brazil,2018,Rio de Janeiro,Rio Das Flores,6,3
+455,Brazil,2018,Rio de Janeiro,Sao Goncalo,1,0
+456,Brazil,2018,Rio de Janeiro,Sao Jose Do Vale Do Rio Preto,2,1
+457,Brazil,2018,Rio de Janeiro,Sapucaia,1,1
+458,Brazil,2018,Rio de Janeiro,Silva Jardim,5,2
+459,Brazil,2018,Rio de Janeiro,Sumidouro,13,5
+460,Brazil,2018,Rio de Janeiro,Teresopolis,22,8
+461,Brazil,2018,Rio de Janeiro,Trajano De Moraes,4,3
+462,Brazil,2018,Rio de Janeiro,Tres Rios,1,1
+463,Brazil,2018,Rio de Janeiro,Valenca,33,5
+464,Brazil,2018,Rio de Janeiro,Vassouras,5,3
+465,Brazil,2018,Rio de Janeiro,Volta Redonda,1,0
+466,Brazil,2018,Sao Paulo,Aguai,1,1
+467,Brazil,2018,Sao Paulo,Aruja,11,5
+468,Brazil,2018,Sao Paulo,Atibaia,40,8
+469,Brazil,2018,Sao Paulo,Bom Jesus Dos Perdoes,3,1
+470,Brazil,2018,Sao Paulo,Braganca Paulista,2,2
+471,Brazil,2018,Sao Paulo,Cacapava,3,0
+472,Brazil,2018,Sao Paulo,Cachoeira Paulista,1,1
+473,Brazil,2018,Sao Paulo,Caieiras,1,0
+474,Brazil,2018,Sao Paulo,Campo Limpo Paulista,5,1
+475,Brazil,2018,Sao Paulo,Caraguatatuba,1,1
+476,Brazil,2018,Sao Paulo,Cotia,9,4
+477,Brazil,2018,Sao Paulo,Eldorado,2,1
+478,Brazil,2018,Sao Paulo,Embu Das Artes,2,1
+479,Brazil,2018,Sao Paulo,Embu-Guacu,7,3
+480,Brazil,2018,Sao Paulo,Espirito Santo Do Pinhal,3,2
+481,Brazil,2018,Sao Paulo,Francisco Morato,3,2
+482,Brazil,2018,Sao Paulo,Franco Da Rocha,7,1
+483,Brazil,2018,Sao Paulo,Guaruja,1,1
+484,Brazil,2018,Sao Paulo,Guarulhos,28,14
+485,Brazil,2018,Sao Paulo,Ibiuna,14,9
+486,Brazil,2018,Sao Paulo,Igarata,3,2
+487,Brazil,2018,Sao Paulo,Iguape,5,0
+488,Brazil,2018,Sao Paulo,Iporanga,1,1
+489,Brazil,2018,Sao Paulo,Itanhaem,1,1
+490,Brazil,2018,Sao Paulo,Itapecerica Da Serra,7,2
+491,Brazil,2018,Sao Paulo,Itapira,1,0
+492,Brazil,2018,Sao Paulo,Itariri,8,4
+493,Brazil,2018,Sao Paulo,Itatiba,4,1
+494,Brazil,2018,Sao Paulo,Itupeva,1,0
+495,Brazil,2018,Sao Paulo,Jacupiranga,1,1
+496,Brazil,2018,Sao Paulo,Jarinu,9,4
+497,Brazil,2018,Sao Paulo,Joanopolis,1,1
+498,Brazil,2018,Sao Paulo,Jundiai,2,2
+499,Brazil,2018,Sao Paulo,Juquia,1,1
+500,Brazil,2018,Sao Paulo,Juquitiba,3,2
+501,Brazil,2018,Sao Paulo,Mairipora,139,34
+502,Brazil,2018,Sao Paulo,Miracatu,8,2
+503,Brazil,2018,Sao Paulo,Mogi Mirim,1,1
+504,Brazil,2018,Sao Paulo,Monte Alegre Do Sul,2,2
+505,Brazil,2018,Sao Paulo,Monteiro Lobato,10,5
+506,Brazil,2018,Sao Paulo,Morungaba,1,1
+507,Brazil,2018,Sao Paulo,Natividade Da Serra,1,0
+508,Brazil,2018,Sao Paulo,Nazare Paulista,30,12
+509,Brazil,2018,Sao Paulo,Pedro De Toledo,1,0
+510,Brazil,2018,Sao Paulo,Peruibe,3,1
+511,Brazil,2018,Sao Paulo,Piedade,6,3
+512,Brazil,2018,Sao Paulo,Piracaia,10,3
+513,Brazil,2018,Sao Paulo,Piracicaba,1,1
+514,Brazil,2018,Sao Paulo,Poa,1,0
+515,Brazil,2018,Sao Paulo,Porto Feliz,1,0
+516,Brazil,2018,Sao Paulo,Salto De Pirapora,1,0
+517,Brazil,2018,Sao Paulo,Santa Isabel,12,4
+518,Brazil,2018,Sao Paulo,Santa Rita Do Passa Quatro,1,0
+519,Brazil,2018,Sao Paulo,Santo Andre,1,1
+520,Brazil,2018,Sao Paulo,Sao Bento Do Sapucai,2,1
+521,Brazil,2018,Sao Paulo,Sao Bernardo Do Campo,2,1
+522,Brazil,2018,Sao Paulo,Sao Caetano Do Sul,2,1
+523,Brazil,2018,Sao Paulo,Sao Joao Da Boa Vista,1,0
+524,Brazil,2018,Sao Paulo,Sao Jose Dos Campos,9,4
+525,Brazil,2018,Sao Paulo,Sao Lourenco Da Serra,1,0
+526,Brazil,2018,Sao Paulo,Sao Miguel Arcanjo,1,1
+527,Brazil,2018,Sao Paulo,Sao Paulo,29,7
+528,Brazil,2018,Sao Paulo,Sao Roque,4,1
+529,Brazil,2018,Sao Paulo,Sao Sebastiao,3,2
+530,Brazil,2018,Sao Paulo,Sao Vicente,1,0
+531,Brazil,2018,Sao Paulo,Silveiras,1,0
+532,Brazil,2018,Sao Paulo,Tambau,2,1
+533,Brazil,2018,Sao Paulo,Tapirai,1,0
+534,Brazil,2018,Sao Paulo,Taubate,2,1
+535,Brazil,2018,Sao Paulo,Tremembe,1,0
+536,Brazil,2018,Sao Paulo,Ubatuba,11,3
+537,Brazil,2018,Sao Paulo,Valinhos,7,4
+538,Brazil,2018,Sao Paulo,Varzea Paulista,2,2
+539,Brazil,2018,Minas Gerais,Acaiaca,4,0
+540,Brazil,2018,Minas Gerais,Aguanil,1,1
+541,Brazil,2018,Minas Gerais,Alto Rio Doce,1,1
+542,Brazil,2018,Minas Gerais,Alvinopolis,1,1
+543,Brazil,2018,Minas Gerais,Amparo Do Serra,1,0
+544,Brazil,2018,Minas Gerais,Antonio Carlos,2,1
+545,Brazil,2018,Minas Gerais,Baependi,2,2
+546,Brazil,2018,Minas Gerais,Barao De Cocais,24,11
+547,Brazil,2018,Minas Gerais,Barbacena,2,2
+548,Brazil,2018,Minas Gerais,Barra Longa,1,1
+549,Brazil,2018,Minas Gerais,Barroso,1,1
+550,Brazil,2018,Minas Gerais,Belo Horizonte,3,0
+551,Brazil,2018,Minas Gerais,Belo Vale,3,1
+552,Brazil,2018,Minas Gerais,Bicas,2,1
+553,Brazil,2018,Minas Gerais,Bom Jardim De Minas,1,1
+554,Brazil,2018,Minas Gerais,Bom Jesus Do Amparo,1,0
+555,Brazil,2018,Minas Gerais,Brazopolis,4,1
+556,Brazil,2018,Minas Gerais,Brumadinho,13,4
+557,Brazil,2018,Minas Gerais,Caete,16,6
+558,Brazil,2018,Minas Gerais,Cambui,1,1
+559,Brazil,2018,Minas Gerais,Cambuquira,1,0
+560,Brazil,2018,Minas Gerais,Caranaiba,1,1
+561,Brazil,2018,Minas Gerais,Carandai,2,0
+562,Brazil,2018,Minas Gerais,Careaucu,1,0
+563,Brazil,2018,Minas Gerais,Carmo De Cachoeira,1,1
+564,Brazil,2018,Minas Gerais,Carmopolis De Minas,2,0
+565,Brazil,2018,Minas Gerais,Catas Altas,1,1
+566,Brazil,2018,Minas Gerais,Cipotanea,2,0
+567,Brazil,2018,Minas Gerais,Conceicao Dos Ouros,4,4
+568,Brazil,2018,Minas Gerais,Congonhas,3,1
+569,Brazil,2018,Minas Gerais,Conselheiro Lafaiete,11,2
+570,Brazil,2018,Minas Gerais,Consolacao,1,0
+571,Brazil,2018,Minas Gerais,Contagem,5,2
+572,Brazil,2018,Minas Gerais,Coqueiral,1,1
+573,Brazil,2018,Minas Gerais,Diogo De Vasconcelos,2,0
+574,Brazil,2018,Minas Gerais,Divinopolis,1,0
+575,Brazil,2018,Minas Gerais,Ervalia,1,1
+576,Brazil,2018,Minas Gerais,Ferros,1,1
+577,Brazil,2018,Minas Gerais,Guaraciaba,7,2
+578,Brazil,2018,Minas Gerais,Guarani,1,0
+579,Brazil,2018,Minas Gerais,Heliodora,1,1
+580,Brazil,2018,Minas Gerais,Itabira,11,8
+581,Brazil,2018,Minas Gerais,Itabirito,15,0
+582,Brazil,2018,Minas Gerais,Itaguara,1,0
+583,Brazil,2018,Minas Gerais,Itauna,3,0
+584,Brazil,2018,Minas Gerais,Itaverava,4,2
+585,Brazil,2018,Minas Gerais,Jacutinga,1,0
+586,Brazil,2018,Minas Gerais,Jeceaba,1,1
+587,Brazil,2018,Minas Gerais,Joao Monlevade,2,0
+588,Brazil,2018,Minas Gerais,Juiz De Fora,40,10
+589,Brazil,2018,Minas Gerais,Lagoa Dourada,1,1
+590,Brazil,2018,Minas Gerais,Lambari,1,0
+591,Brazil,2018,Minas Gerais,Lima Duarte,7,6
+592,Brazil,2018,Minas Gerais,Machado,1,1
+593,Brazil,2018,Minas Gerais,Mar De Espanha,1,0
+594,Brazil,2018,Minas Gerais,Mariana,39,5
+595,Brazil,2018,Minas Gerais,Maripa De Minas,2,1
+596,Brazil,2018,Minas Gerais,Mateus Leme,4,2
+597,Brazil,2018,Minas Gerais,Matias Barbosa,7,3
+598,Brazil,2018,Minas Gerais,Merces,3,0
+599,Brazil,2018,Minas Gerais,Moeda,2,0
+600,Brazil,2018,Minas Gerais,Muriae,1,0
+601,Brazil,2018,Minas Gerais,Natercia,1,0
+602,Brazil,2018,Minas Gerais,Nova Lima,34,9
+603,Brazil,2018,Minas Gerais,Nova Uniao,1,0
+604,Brazil,2018,Minas Gerais,Ouro Branco,12,5
+605,Brazil,2018,Minas Gerais,Ouro Preto,17,7
+606,Brazil,2018,Minas Gerais,Paiva,1,1
+607,Brazil,2018,Minas Gerais,Paraisopolis,4,1
+608,Brazil,2018,Minas Gerais,Passa Tempo,2,1
+609,Brazil,2018,Minas Gerais,Passa-Vinte,1,1
+610,Brazil,2018,Minas Gerais,Paula Candido,1,0
+611,Brazil,2018,Minas Gerais,Pedra Do Anta,2,1
+612,Brazil,2018,Minas Gerais,Pedro Leopoldo,1,0
+613,Brazil,2018,Minas Gerais,Pequeri,2,1
+614,Brazil,2018,Minas Gerais,Piau,3,2
+615,Brazil,2018,Minas Gerais,Piranga,11,3
+616,Brazil,2018,Minas Gerais,Pirangucu,1,1
+617,Brazil,2018,Minas Gerais,Ponte Nova,5,4
+618,Brazil,2018,Minas Gerais,Porto Firme,11,2
+619,Brazil,2018,Minas Gerais,Presidente Bernardes,8,2
+620,Brazil,2018,Minas Gerais,Raposos,1,1
+621,Brazil,2018,Minas Gerais,Ressaquinha,1,0
+622,Brazil,2018,Minas Gerais,Rio Acima,13,2
+623,Brazil,2018,Minas Gerais,Rio Espera,1,0
+624,Brazil,2018,Minas Gerais,Rio Manso,2,1
+625,Brazil,2018,Minas Gerais,Rio Novo,1,1
+626,Brazil,2018,Minas Gerais,Rio Piracicaba,1,0
+627,Brazil,2018,Minas Gerais,Rio Pomba,1,0
+628,Brazil,2018,Minas Gerais,Rio Preto,7,3
+629,Brazil,2018,Minas Gerais,Sabara,13,2
+630,Brazil,2018,Minas Gerais,Santa Barbara,16,4
+631,Brazil,2018,Minas Gerais,Santa Barbara Do Monte Verde,1,0
+632,Brazil,2018,Minas Gerais,Santa Luzia,3,0
+633,Brazil,2018,Minas Gerais,Santa Rita De Jacutinga,3,1
+634,Brazil,2018,Minas Gerais,Santa Rita Do Sapucai,2,0
+635,Brazil,2018,Minas Gerais,Santana Do Deserto,1,0
+636,Brazil,2018,Minas Gerais,Santana Dos Montes,1,0
+637,Brazil,2018,Minas Gerais,Santo Antonio Do Aventureiro,2,2
+638,Brazil,2018,Minas Gerais,Santos Dumont,5,2
+639,Brazil,2018,Minas Gerais,Sao Domingos Do Prata,2,1
+640,Brazil,2018,Minas Gerais,Sao Goncalo Do Rio Abaixo,4,0
+641,Brazil,2018,Minas Gerais,Sao Goncalo Do Sapucai,1,0
+642,Brazil,2018,Minas Gerais,Sao Miguel Do Anta,1,0
+643,Brazil,2018,Minas Gerais,Sao Sebastiao Da Bela Vista,1,0
+644,Brazil,2018,Minas Gerais,Sao Thome Das Letras,12,3
+645,Brazil,2018,Minas Gerais,Sapucai-Mirim,5,2
+646,Brazil,2018,Minas Gerais,Senador Firmino,2,0
+647,Brazil,2018,Minas Gerais,Senhora De Oliveira,2,2
+648,Brazil,2018,Minas Gerais,Simao Pereira,2,1
+649,Brazil,2018,Minas Gerais,Teixeiras,3,3
+650,Brazil,2018,Minas Gerais,Uba,1,0
+651,Brazil,2018,Minas Gerais,Vespasiano,1,0
+652,Brazil,2018,Minas Gerais,Vicosa,9,5
+653,Brazil,2018,Unknown,Unknown,1,0
+654,Brazil,2019,Amazonas,Codajas,1,0
+655,Brazil,2019,Santa Catarina,Joinville,1,1
+656,Brazil,2019,Santa Catarina,Itaiopolis,1,1
+657,Brazil,2019,Para,Afua,1,0
+658,Brazil,2019,Para,Anapu,1,1
+659,Brazil,2019,Para,Breves,1,1
+660,Brazil,2019,Para,Santarem,1,1
+661,Brazil,2019,Parana,Adrianopolis,2,0
+662,Brazil,2019,Parana,Antonina,2,0
+663,Brazil,2019,Parana,Guaraquecaba,2,0
+664,Brazil,2019,Parana,Guaratuba,1,0
+665,Brazil,2019,Parana,Morretes,2,1
+666,Brazil,2019,Parana,Paranagua,1,0
+667,Brazil,2019,Parana,Quatro Barras,1,0
+668,Brazil,2019,Parana,Sao Jose Dos Pinhais,1,0
+669,Brazil,2019,Sao Paulo,Apiai,1,0
+670,Brazil,2019,Sao Paulo,Barra Do Turvo,10,0
+671,Brazil,2019,Sao Paulo,Cachoeira Paulista,1,0
+672,Brazil,2019,Sao Paulo,Cajati,5,0
+673,Brazil,2019,Sao Paulo,Cananeia,4,1
+674,Brazil,2019,Sao Paulo,Eldorado,14,5
+675,Brazil,2019,Sao Paulo,Iporanga,18,3
+676,Brazil,2019,Sao Paulo,Itaoca,1,0
+677,Brazil,2019,Sao Paulo,Jacupiranga,4,0
+678,Brazil,2019,Sao Paulo,Juquia,1,0
+679,Brazil,2019,Sao Paulo,Pariquera-Acu,6,0
+680,Brazil,2019,Sao Paulo,Registro,2,0
+681,Brazil,2019,Sao Paulo,Ribeira,1,1
+682,Brazil,2019,Sao Paulo,Ribeirao Branco,1,0
+683,Brazil,2019,Sao Paulo,Serra Negra,1,1
+684,Brazil,2019,Sao Paulo,Sete Barras,1,1
+685,Brazil,2020,Acre,Acrelandia,1,1
+686,Brazil,2020,Santa Catarina,Blumenau,7,0
+687,Brazil,2020,Santa Catarina,Camboriu,1,1
+688,Brazil,2020,Santa Catarina,Indaial,4,1
+689,Brazil,2020,Santa Catarina,Jaragua Do Sul,1,0
+690,Brazil,2020,Santa Catarina,Pomerode,3,0
+691,Brazil,2020,Santa Catarina,Sao Bento Do Sul,1,0
+692,Brazil,2021,Para,Afua,2,1
+693,Brazil,2021,Para,Oeiras Do Para,1,1
+694,Brazil,2021,Santa Catarina,Aguas Mornas,2,1
+695,Brazil,2021,Santa Catarina,Anitapolis,1,0
+696,Brazil,2021,Santa Catarina,Blumenau,1,1
+697,Brazil,2021,Santa Catarina,Paulo Lopes,1,0
+698,Brazil,2021,Santa Catarina,Sao Bonifacio,1,1
+699,Brazil,2021,Santa Catarina,Taio,1,0
+700,Brazil,2021,Santa Catarina,Urussanga,1,0
+701,Brazil,2022,Para,Afua,1,1
+702,Brazil,2022,Sao Paulo,Vargem Grande Do Sul,1,0
+703,Brazil,2022,Tocantins,Gurupi,1,0
+704,Brazil,2022,Tocantins,Sao Salvador Do Tocantins,1,1
+705,Brazil,2023,Roraima,Rorainopolis,1,1
+706,Brazil,2023,Amazonas,Manacapuru,1,1
+707,Brazil,2023,Amazonas,Maraa,1,0
+708,Brazil,2023,Sao Paulo,Sao Joao Da Boa Vista,1,1
+709,Brazil,2023,Sao Paulo,Sao Sebastiao Da Grama,2,1
+710,Brazil,2024,Goias,Novo Brasil,1,0
+711,Brazil,2024,Amazonas,Anori,1,1
+712,Brazil,2024,Amazonas,Presidente Figueiredo,1,1
+713,Brazil,2024,Minas Gerais,Camanducaia,1,0
+714,Brazil,2024,Minas Gerais,Monte Siao,1,1
+715,Brazil,2024,Sao Paulo,Joanopolis,1,0
+716,Brazil,2024,Sao Paulo,Serra Negra,1,0
+717,Brazil,2024,Sao Paulo,Socorro,1,1
