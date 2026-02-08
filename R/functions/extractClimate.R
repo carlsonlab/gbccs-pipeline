@@ -17,11 +17,11 @@
 #' - date: %Y-%m-%d
 #' - covs (above)
 
-extractClimate <- function(
-    covs = c("tmp", "tmn", "tmx", "pre", "pet"),
+# Honestly I thought this would make it smaller to commit to Github but no
+buildStack <- function(
+    covs = c("tmp", "pre"),
     data_dir = here::here("data", "cru", "raw", "cru_ts_4.09"),
-    polygons, # e.g., = terra::vect("path/to/cholera.shp")
-    out_dir = here::here("data", "cru", "clean")) {
+    stack_file = file.path(data_dir, "cru_ts_4.09_stacked.tif")) {
   # HELPER: read in the CRU data for each variable of interest
   # Explicitly set each layer to the variable name
   # TODO: maybe use OS or similar to just grab all files in the data_dir? to avoid hard coding versions / years wihch might change
@@ -39,50 +39,59 @@ extractClimate <- function(
     return(r)
   }
 
-  # HELPER: extract the variable means for each polygon for each month
-  # Currently uses an area-weighted average, so gives mean weighted by fraction of each CRU grid cell within the admin polygon
+  cru_list <- lapply(covs, readClimate, data_dir)
+  cru_stack <- do.call(c, cru_list)
+  message("Saving!")
+  terra::writeRaster(
+    cru_stack,
+    stack_file,
+    overwrite = TRUE
+  )
+  message("Done!")
+  return(stack_file)
+}
+
+extractClimate <- function(
+    stack_file = stack_file,
+    polygons,
+    out_dir = here::here("data", "cru", "clean")) {
+  cru_stack <- terra::rast(stack_file)
+  # I'm not sure I should do this (reproject???) - don't think it makes a big difference though
+  # NOTE: polygons needs to be a terravector
   # NOTE/TODO: CRU projection needs to match the polygon projection and extent
-  extractVar <- function(cru_raster, var, polygons) {
-    # I'm not sure I should do this (reproject???) - don't think it makes a big difference though
-    # NOTE: polygons needs to be a terravector
-    polygons <- terra::vect(polygons)
-    polygons <- terra::project(polygons, terra::crs(cru_raster))
-    cru_raster <- terra::crop(cru_raster, polygons)
+  polygons <- terra::vect(polygons)
+  polygons <- terra::project(polygons, terra::crs(cru_stack))
+  cru_stack <- terra::crop(cru_stack, polygons)
 
-    # Makes only a slight difference if we use weights or not
-    # TODO: plot / do sensitivity analysis at administrative level
-    df <- terra::extract(cru_raster, polygons, fun = mean, na.rm = TRUE, weights = TRUE)
-    dates <- terra::time(cru_raster)
-    long <- df %>%
-      tidyr::pivot_longer(
-        cols = -ID,
-        names_to = "layer",
-        values_to = var
-      ) %>%
-      dplyr::mutate(
-        layer = as.integer(gsub(paste0(var, "_"), "", layer)),
-        date = dates[layer]
-      ) %>%
-      dplyr::select(-layer)
-    return(long)
-  }
+  # Currently uses an area-weighted average, so gives mean weighted by fraction of each CRU grid cell within the admin polygon
+  # Makes only a slight difference if we use weights or not
+  # TODO: plot / do sensitivity analysis at administrative level
+  df <- terra::extract(cru_stack, polygons, fun = mean, na.rm = TRUE, weights = TRUE)
 
-  cru <- lapply(covs, readClimate, data_dir)
-  names(cru) <- covs
+  dates <- terra::time(cru_stack)
 
-  all_vars <- lapply(seq_along(covs), function(i) {
-    extractVar(cru[[i]], covs[i], polygons)
-  })
+  long <- df |>
+    tidyr::pivot_longer(
+      cols = -ID,
+      names_to = "layer",
+      values_to = "value"
+    ) |>
+    tidyr::separate(layer, into = c("var", "layer_id"), sep = "_") |>
+    dplyr::mutate(
+      layer_id = as.integer(layer_id),
+      date = dates[layer_id]
+    ) |>
+    dplyr::select(ID, date, var, value)
 
-  # Merge it all into one table with one row per time/place
-  # TODO: Consider one row per time/place/cov....
-  cru_extract <- all_vars[[1]]
-  for (i in 2:length(all_vars)) {
-    cru_extract <- dplyr::left_join(cru_extract, all_vars[[i]], by = c("ID", "date"))
-  }
+  wide <- tidyr::pivot_wider(
+    long,
+    names_from = var,
+    values_from = value
+  )
+
 
   out_name <- paste0("cru_all_vars_", format(Sys.Date(), "%Y%m%d"), ".csv")
-  write.csv(cru_extract, file.path(out_dir, out_name))
+  write.csv(wide, file.path(out_dir, out_name))
 
-  return(cru_extract)
+  return(wide)
 }
