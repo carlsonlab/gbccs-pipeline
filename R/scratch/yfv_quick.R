@@ -29,6 +29,6 @@ yfv %>%
   geom_sf(aes(
     fill = cases,
     colour = ggplot2::after_scale(fill),
-    linedwidth = I(0.3)
+    linewidth = I(0.3)
   )) +
   scale_fill_gradient()
