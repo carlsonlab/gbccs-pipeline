@@ -11,8 +11,7 @@
 # TODO: Come back to this and make it handle access tokens correctly (???)
 
 
-# , "tmn", "tmx", "pre", "pet"
-load_cru <- function(covs = c("tmp"),
+load_cru <- function(covs = c("tmp", "tmn", "tmx", "pre", "pet"),
                      file_format = "dat.nc",
                      token = CEDA_TOKEN) {
   # HELPER Generate new Archive Access Token from CEDA website
