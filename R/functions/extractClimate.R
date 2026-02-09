@@ -62,11 +62,15 @@ extractClimate <- function(
   polygons <- terra::vect(polygons)
   polygons <- terra::project(polygons, terra::crs(cru_stack))
   cru_stack <- terra::crop(cru_stack, polygons)
+  message("Finished the polygons!")
+
 
   # Currently uses an area-weighted average, so gives mean weighted by fraction of each CRU grid cell within the admin polygon
   # Makes only a slight difference if we use weights or not
   # TODO: plot / do sensitivity analysis at administrative level
+  message("Extracting the means!")
   df <- terra::extract(cru_stack, polygons, fun = mean, na.rm = TRUE, weights = TRUE)
+  message("Done with the means!")
 
   dates <- terra::time(cru_stack)
 
