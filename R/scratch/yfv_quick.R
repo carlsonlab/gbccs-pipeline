@@ -2,6 +2,7 @@ library(tidyverse)
 library(here)
 library(sf)
 library(geobr)
+library(terra)
 
 data_dir <- here::here("data")
 yfv <- read.csv(file.path(data_dir, "yfv/brazil_yfv_paho_1994-2024.csv"))
