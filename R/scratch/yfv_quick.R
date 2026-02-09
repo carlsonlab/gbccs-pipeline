@@ -59,3 +59,77 @@ p_adm1facets <- yfv1 %>%
 ggsave(file.path(output_dir, "yfv_cases/yfv_adm1_cases_2000_2024_log.png"),
   plot = p_adm1facets, width = 12, height = 8, dpi = 500
 )
+
+temp <- terra::rast(file.path(data_dir, "cru/raw/cru_ts_4.09/cru_ts4.09.1901.2024.tmp.dat.nc"))["tmp"]
+prec <- terra::rast(file.path(data_dir, "cru/raw/cru_ts_4.09/cru_ts4.09.1901.2024.pre.dat.nc"))["pre"]
+
+states <- sf::st_transform(states, crs(temp))
+
+years <- 2000:2024
+months_idx <- function(year) ((year - 1901) * 12 + 1):((year - 1901 + 1) * 12)
+prec_annual <- rast()
+temp_annual <- rast()
+
+for (y in years) {
+  idx <- months_idx(y)
+  prec_annual <- c(prec_annual, mean(prec[[idx]]))
+  temp_annual <- c(temp_annual, mean(temp[[idx]]))
+}
+names(prec_annual) <- paste0("pre_", years)
+names(temp_annual) <- paste0("tmp_", years)
+
+adm1_climate <- data.frame()
+
+for (i in seq_along(years)) {
+  y <- years[i]
+  t_vals <- terra::extract(temp_annual[[i]], vect(states), fun = mean, na.rm = TRUE)[, 2]
+  p_vals <- terra::extract(prec_annual[[i]], vect(states), fun = mean, na.rm = TRUE)[, 2]
+
+  df <- data.frame(
+    code_state = states$code_state,
+    state_name = states$name_state,
+    year = y,
+    temp = t_vals,
+    prec = p_vals
+  )
+
+  adm1_climate <- bind_rows(adm1_climate, df)
+}
+
+library(brpop)
+
+pop <- brpop::uf_pop_totals(source = "datasus2024")
+
+pop <- pop %>% mutate(uf = as.numeric(uf))
+
+yfv1 <- yfv1 %>%
+  dplyr::left_join(pop, by = c("code_state" = "uf", "year" = "year"))
+
+yfv1 <- yfv1 %>% dplyr::left_join(adm1_climate, by = c("code_state" = "code_state", "year" = "year"))
+
+yfv1 %>% ggplot(aes(x = temp, y = log10(cases + 1))) +
+  geom_point(alpha = 0.1)
+
+yfv1 %>% ggplot(aes(x = prec, y = log10(cases + 1))) +
+  geom_point(alpha = 0.1)
+
+model <- gam(
+  cases ~ s(temp, bs = "cr") +
+    s(prec, bs = "cr") +
+    offset(log(pop + 1)),
+  data = yfv1,
+  family = ziP(),
+  method = "REML"
+)
+
+plot.gam(model, pages = 1)
+
+preds <- mgcv::predict.gam(model, yfv1, type = "response")
+
+yfv1$preds <- preds
+yfv1 %>%
+  ggplot(aes(x = cases + 1, y = preds + 1)) +
+  geom_point(alpha = 0.05) +
+  scale_x_log10() +
+  scale_y_log10() +
+  geom_smooth(method = "lm")
