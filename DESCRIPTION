@@ -29,4 +29,6 @@ Imports:
     tibble,
     patchwork,
     qs,
-    jsonlite
+    jsonlite, 
+    terra,
+    httr2
